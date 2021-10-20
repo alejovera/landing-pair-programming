@@ -1,0 +1,26 @@
+.banner {
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    box-sizing: border-box;
+}
+.navbar__wrapper {
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+input[type='checkbox'] { 
+    display: none;
+ }
+#items_navbar {
+    display: none;
+}
+#menu:checked ~ #items_navbar {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
