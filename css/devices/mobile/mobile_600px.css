@@ -25,12 +25,12 @@ nav span {
     font-family: "Livvic";
     font-weight: bold;
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     /* font-style: italic; */
 }
 nav label img {
-    width: 2em;
-    height: 2em;
+    width: 1.8em;
+    height: 1.8em;
     object-fit: contain;
     align-items: center;
 }
@@ -49,7 +49,6 @@ input[type='checkbox'] {
     top: 4em;
     right: 0;
 }
-
 .banner-info {
     display: flex;
     flex-direction: column;
@@ -92,14 +91,16 @@ input[type='checkbox'] {
     padding: 2em 0 0 0;
     box-sizing: border-box;
 }
-.section > span {
-    border: 3px solid var(--color-pink);
-    width: 200px;
-    height: 3px;
+.section__line {
+    width: 50px;
+    height: 1px;
+    margin: 0 0 1.5em 0.8em;
+    /* padding: 0 0 0 0.5em; */
+    border-bottom: 5px solid var(--color-pink);
 }
 .section h2 {
     width: 70%;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
     font-family: 'Livvic';
     color: white;
@@ -109,9 +110,16 @@ input[type='checkbox'] {
     box-sizing: border-box;
 }
 .section__image-bg {
-    /* rotate: 90deg; */
+    transform: rotate(-90deg);
+    filter: drop-shadow(1px 5px 20px black);
     position: absolute;
-    top: 100vh;
-    right: 0;
+    top: 116vh;
+    right: -50px;
     z-index: 2;
+}
+.section__qualities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
