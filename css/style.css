@@ -1,8 +1,15 @@
 @import url(./global/base.css);
 
 /* 
+    skins
+*/
+
+@import url(./skin/skins.css);
+
+/* 
     devices
 */
+
 @import url(./devices/desktop/desktop_900px.css) (min-width: 900px);
 
 @import url(./devices/tablet/tablet_900px.css) (max-width: 900px);
