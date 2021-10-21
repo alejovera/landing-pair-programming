@@ -179,17 +179,70 @@ input[type="checkbox"], .menu_img{
     background-color: var(--bg-color-pink);
     height: 20vh;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
 }
 
 .section__contact h2, .section__contact button{
     color: var(--color-primary);
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 
 .section__contact img{
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -25;
+}
+
+.section__contact button{
+    font-size: 1.3em;
+    background-color: var(--bg-color-pink);
+    border: 2px solid var(--color-primary);
+    border-radius: 25px;
+    padding: 8px 20px;
+}
+
+footer{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--color-primary);
+    font-size: 1.2em;
+    padding: 40px;
+}
+
+.footer_info, .footer_social{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_info > div:last-child, .footer_social > div:last-child{
+    opacity: 0.5;
+}
+
+.footer_info div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_info div:first-child span{
+    font-size: 1.5em;
+}
+
+.footer__links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__data{
+    text-align: end;
+}
+
+.footer__social-icons{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
 }
