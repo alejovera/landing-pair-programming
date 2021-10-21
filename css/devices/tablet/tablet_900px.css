@@ -246,3 +246,7 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+
+#end_persons{
+    display: none;
+}
