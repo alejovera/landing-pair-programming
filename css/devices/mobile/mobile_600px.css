@@ -12,7 +12,6 @@
     width: 100%;
     box-sizing: border-box;
     padding: 2em 0 0 0;
-    /* margin: 2em 0 0 0; */
 }
 nav {
     display: flex;
@@ -25,14 +24,15 @@ nav span {
     font-family: "Livvic";
     font-weight: bold;
     color: white;
-    font-size: 1.5rem;
-    /* font-style: italic; */
+    font-size: 1.8rem;
 }
 nav label img {
     width: 1.8em;
     height: 1.8em;
     object-fit: contain;
     align-items: center;
+    display: block;
+    /* Porque necesito poner important si estoy trabajando en la seccion mia */
 }
 input[type='checkbox'] { 
     display: none;
@@ -59,10 +59,10 @@ input[type='checkbox'] {
     margin: 0 0 2em 0;
 } 
 .banner-info h1 {
-    /* width: 90%; */
     text-align: center;
     padding: 0 2em 0 2em;
-    font-size: 1.95rem;
+    font-size: 2rem;
+    margin: 0;
     color: white;
     font-family: 'Livvic';
 }
@@ -72,7 +72,7 @@ input[type='checkbox'] {
 .banner-info p {
     text-align: center;
     padding: 1em;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 600;
     color: white;
     font-family: 'Livvic';
@@ -85,7 +85,7 @@ input[type='checkbox'] {
     object-fit: contain;
 }
 .section {
-    height: 180vh;
+    height: 190vh;
     width: 100%;
     background-color: var(--color-primary);
     padding: 2em 0 0 0;
@@ -100,7 +100,7 @@ input[type='checkbox'] {
 }
 .section h2 {
     width: 62%;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Livvic';
     color: white;
@@ -112,7 +112,7 @@ input[type='checkbox'] {
     transform: rotate(-90deg);
     filter: drop-shadow(1px 5px 20px black);
     position: absolute;
-    top: 116vh;
+    top: 110vh;
     right: -50px;
     z-index: 2;
 }
@@ -130,6 +130,7 @@ input[type='checkbox'] {
     font-family: "Livvic";
     font-weight: 600;
     font-size: 1.1rem;
+    display: flex;
     margin: 1em 0 0.8em 0;
 }
 .section__qualities p {
@@ -140,30 +141,102 @@ input[type='checkbox'] {
 }
 .section2 {
     width: 100%;
-    height: 150vh;
+    height: 240vh;
     background-color: var(--color-secondary);
-}
-.img_top_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     position: relative;
 }
-.img_top_container img {
-    position: absolute;
+.section2 img:nth-child(1) {
+    align-self: flex-start;
 }
-
 .section2 h3 {
     color: var(--color-white);
     font-family: 'Livvic';
-    padding: 5em 1.5em 0;
+    padding: 1em 1em 0;
     text-align: center;
     font-size: 1.8rem;
+    margin: 0;
 }
-.section2 > h3 > span {
-    color: var(--color-light-green);
+.section__persons > h3 > span {
+    color: var(--color-light-green) !important;
 }
-.section__persons {
+.section__persons-container {
     padding: 1em 1em 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.section__persons-container p {
+    color: white;
+    font-family: 'Livvic';
+    font-weight: 600;
+    text-align: center;
+    /* text-justify:auto; */
+}
+.section__persons-container h4 {
+    color: var(--color-light-green);
+    font-size: 1rem;
+    margin: 1em 0 0.5em 0;
+}
+.section__persons-container h6 {
+    color: var(--gray-light);
+    font-size: 0.8rem;
+    margin: 0;
+}
+.section__persons-container img {
+    border-radius: 50%;
+    width: 4em;
+    object-fit: contain;
+    border: 1px solid var(--gray-light);
+    margin: 1em 0 0 0;
+}
+#end_persons {
+    align-self: flex-end;
+}
+.section__contact {
+    height: 69vh;
+    width: 100%;
+    position: relative;
+    background-color: var(--color-pink);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.section__contact h2, .section__contact button{
+    color: var(--color-primary);
+    font-size: 1.9em;
+    font-weight: bold;
+}
+.section__contact h2 {
+    padding: 1em 0 0 0;
+}
+.section__contact img {
+    align-self: flex-start;
+}
+
+/* .section__contact img{
+    position: absolute;
+    left: 0;
+    bottom: -25;
+} */
+
+.section__contact button{
+    font-size: 1.3em;
+    background-color: var(--bg-color-pink);
+    border: 2px solid var(--color-primary);
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-family: 'Livvic';
+}
+footer {
+    background-color: var(--gray-dark);
+    margin: 0;
 }
