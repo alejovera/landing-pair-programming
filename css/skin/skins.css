@@ -1,4 +1,5 @@
 :root {
+    --quotes: url("../../../icons/icon-quotes.svg");
     --color-primary: #012F34;
     --color-secondary: #014E56;
     --primary-ligth: #7dc3c5;

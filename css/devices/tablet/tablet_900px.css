@@ -1,10 +1,8 @@
-/*#012F34 oscuro*/
-/*#014E56 claro*/
-
 *{
     margin: 0;
     padding: 0;
     font-family: "Livvic";
+    color: var(--color-white);
 }
 
 li{
@@ -43,22 +41,20 @@ input[type="checkbox"], .menu_img{
 }
 
 #items_navbar li button{
-    border: 2px solid white;
-    background-color: #014E56;
-    color: white;
+    border: 2px solid var(--color-white);
+    background-color: var(--color-secondary);
     padding: 8px 15px;
     border-radius: 25px;
     font-size: 1.3em;
 }
 
 .banner{
-    background-color: #014E56;
-    height: 80vh;
-    color: white;
+    background-color: var(--color-secondary);
+    height: 75vh;
     position: relative;
 }
 
-.banner > img{
+.img_banner{
     position: absolute;
     bottom: 0;
     left:0px;
@@ -82,8 +78,8 @@ input[type="checkbox"], .menu_img{
     font-size: 5em;
 }
 
-.banner-info h1 span{
-    color: #F67E7E;
+.banner-info h1 span, .section > div > * div h3{
+    color: var(--bg-color-pink);
 }
 
 .banner-info p{
@@ -91,13 +87,109 @@ input[type="checkbox"], .menu_img{
     padding-top: 10px;
 }
 
-.section:first-of-type{
+.section{
     position: relative;
-    background-color: #012F34;
-    height: 80vh;
+    background-color: var(--color-primary);
+    height: 75vh;
+    padding: 100px;
 }
 
-.section:first-of-type > img{
+.section__image-bg{
     position: absolute;
     right: 0;
+    top: 0;
+}
+
+.section > span{
+    font-size: 0.1em;
+    background-color: var(--bg-color-pink);
+    color: var(--bg-color-pink);
+    border-radius: 3px;
+}
+
+.section > h2{
+    padding: 20px 0 50px 0;
+    font-size: 2.5em;
+}
+
+.section > div > *{
+    display: flex;
+    margin: 25px 0;
+    font-size: 1.2em;
+}
+
+.section > div > * div{
+    padding-left: 25px;
+}
+
+.section > div > * div p{
+    padding-top: 10px;
+}
+
+.img_top_container{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.section2{
+    background-color: var(--color-secondary);
+    height: 130vh;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 50px;
+}
+
+.section__persons h3{
+    width: 62%;
+    font-size: 1.9em;
+    margin: auto;
+}
+
+.section__persons h3 span, .section__persons-container h4{
+    color: var(--color-light-green);
+}
+
+.section__persons-container{
+    margin-top: 50px;
+    background: var(--quotes) no-repeat center top;
+    font-size: 1.3em;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__persons-container img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+}
+
+.section__persons-container h4{
+    padding-top: 15px;
+}
+
+.section__contact{
+    position: relative;
+    background-color: var(--bg-color-pink);
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.section__contact h2, .section__contact button{
+    color: var(--color-primary);
+    font-size: 1.5em;
+}
+
+.section__contact img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
