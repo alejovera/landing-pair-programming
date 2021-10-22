@@ -5,13 +5,8 @@
     color: var(--color-white);
 }
 
-li{
-    list-style: none;
-}
-
 .navbar__wrapper, 
-.about, .directors, 
-#items_navbar li button{
+.about, .directors{
     background-color: var(--color-secondary);
 }
 
@@ -35,27 +30,21 @@ li{
     font-size: 1.8em;
 }
 
-.navbar__wrapper nav{
+#items_navbar{
+    font-size: 0.8em;
     width: 70%;
 }
 
-#items_navbar{
-    font-size: 0.8em;
-}
-
-#items_navbar li:not(:last-child){
+#items_navbar a{
     padding-left: 45px;
 }
 
-#items_navbar li:last-child{
+#items_navbar button{
     margin-left: auto;
     width: fit-content;
-}
-
-#items_navbar li button{
     border: 2px solid var(--color-white);
     padding: 8px 15px;
-    border-radius: 25px;
+    border-radius: 25px;cursor: pointer;
 }
 
 .about{

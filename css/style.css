@@ -19,10 +19,3 @@
 @import url(./devices/tablet/tablet_900px.css) (min-width: 600px) and (max-width: 900px);
 
 @import url(./devices/mobile/mobile_600px.css) (max-width: 600px);
-
-.home_testing {
-    z-index: 3;
-    background-color: blueviolet;
-    width: 200px;
-    height: 300px;
-}
