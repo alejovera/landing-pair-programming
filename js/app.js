@@ -10,7 +10,7 @@ const home = `
         <a href="#" onclick="onNavigate('/');" >home</a>
         <a href="#" onclick="onNavigate('/about');" >about</a>
         <button onclick="onNavigate('/contact');">contact</button>
-    <nav>
+    </nav>
 </div>
 <div class="banner-info">
     <h1>Find the best <span>talent</span></h1>
@@ -87,7 +87,7 @@ const home = `
             <nav class="footer__links">
                 <a href="#" onclick="onNavigate('/');" >home</a>
                 <a href="#" onclick="onNavigate('/about');" >about</a>
-            <nav>
+            </nav>
         </div>
         <div class="footer__data">
             <p>987 Hillcrest Lane</p>
@@ -116,7 +116,7 @@ const about = `
     <a href="#" onclick="onNavigate('/');" >home</a>
     <a href="#" onclick="onNavigate('/about');" >about</a>
     <button onclick="onNavigate('/contact');">contact</button>
-<nav>
+</nav>
 </div>
 <section class="about">
     <h1>About</h1>
@@ -188,7 +188,7 @@ const contact = `
         <a href="#" onclick="onNavigate('/');" >home</a>
         <a href="#" onclick="onNavigate('/about');" >about</a>
         <button onclick="onNavigate('/contact');">contact</button>
-    <nav>
+    </nav>
 </div>
 <section class="contact">
     <img src="../icons/bg-pattern-about-2-contact-1.svg">
@@ -229,7 +229,7 @@ const contact = `
         <nav class="footer__links_contact">
             <a href="#" onclick="onNavigate('/');" >home</a>
             <a href="#" onclick="onNavigate('/about');" >about</a>
-        <nav>
+        </nav>
     </div>
     <div class="footer__data_contact">
         <p>987 Hillcrest Lane</p>
