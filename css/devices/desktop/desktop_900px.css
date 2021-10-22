@@ -310,7 +310,7 @@ input[type="checkbox"], .menu_img{
     font-size: 1.3em;
     font-family: 'Livvic';
 }
-footer {
+.index-footer {
     height: 50vh;
     width: 100%;
     box-sizing: border-box;

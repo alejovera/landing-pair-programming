@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Livvic";
+    color: var(--color-white);
+    overflow: visible;
+}
+
+.contact, input, textarea{
+    background-color: var(--color-secondary);
+}
+
+input, textarea{
+    border-style: none;
+    border-bottom: 2px solid var(--color-white);
+    outline: none;
+    width: 80%;
+}
+
+textarea{
+    max-height: 10%;
+    max-width: 80%;
+    min-width: 80%;
+}
+
+button{
+    background-color: var(--color-white);
+    color: var(--color-secondary);
+    border: 1px solid black;
+    outline: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+}
+
+.contact{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    height: 80vh;
+    padding: 50px 0;
+}
+
+.contact div h1{
+    font-size: 2.5em;
+}
+
+.contact > div > p{
+    color: var(--bg-color-pink);
+}
+
+.contact > div > p{
+    font-size: 1.2em;
+}
+
+.contact > div{
+    padding-left: 10%;
+}
+
+.contact form{
+    align-items: flex-start;
+}
+
+.contact form label{
+    padding: 0 15px;
+    opacity: 0.5;
+}
+
+.contact > div, .contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.contact div > *, .contact form{
+    font-size: 0.9em;
+}
+
+.contact div div{
+    display: flex;
+    align-items: center;
+}
+
+.contact > img:first-child, .contact > img:last-child{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+
+.contact > img:first-child{
+    top: 0;
+    left: -70px;
+}
+
+.contact > img:last-child{
+    bottom: 0;
+    right: -80px;
+}
+
+.footer-contact{
+    height: 40vh;
+    display: flex;
+    background-color: var(--color-primary);
+    padding: 50px;
+    font-size: 0.8em;
+}
+
+.footer-contact > *{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_info_contact span{
+    font-size: 1.8em;
+}
+
+.footer_info_contact, .footer_social_contact{
+    justify-content: space-evenly;
+}
+
+.footer__links_contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__data_contact{
+    padding-left: 70px;
+    justify-content: center;
+}
+
+.footer__data_contact, .footer__copyr_contact{
+    opacity: 0.5;
+}
+
+.footer_social_contact{
+    margin-left: auto;
+    align-items: flex-end;
+}
+
+.footer__social-icons_contact{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}

@@ -3,14 +3,26 @@
     padding: 0;
     font-family: "Livvic";
     color: var(--color-white);
-    background-color: var(--color-secondary);
 }
 
 li{
     list-style: none;
 }
 
-.navbar__wrapper, #items_navbar{
+.navbar__wrapper, 
+.about, .directors, 
+#items_navbar li button{
+    background-color: var(--color-secondary);
+}
+
+.navbar__wrapper, 
+#items_navbar, 
+.about, 
+.about h1, 
+.about div, 
+.directors, 
+.person,.clients, 
+.clients div{
     display: flex;
 }
 
@@ -20,11 +32,15 @@ li{
 }
 
 .navbar__wrapper span{
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 .navbar__wrapper nav{
     width: 70%;
+}
+
+#items_navbar{
+    font-size: 0.8em;
 }
 
 #items_navbar li:not(:last-child){
@@ -38,27 +54,23 @@ li{
 
 #items_navbar li button{
     border: 2px solid var(--color-white);
-    background-color: var(--color-secondary);
     padding: 8px 15px;
     border-radius: 25px;
 }
 
 .about{
-    display: flex;
     position: relative;
     height: 30vh;
     overflow: hidden;
 }
 
 .about h1{
-    display: flex;
     justify-content: center;
     flex: 1 1 30%;
     padding-top: 40px;
 }
 
 .about div{
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     flex: 1 1 70%;
@@ -84,41 +96,77 @@ li{
 }
 
 .directors{
-    height: 80vh;
+    height: 100vh;
     position: relative;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    overflow: hidden;
+    background-color: var(--bg-color-green-dark);
+    justify-content: center;
+}
+
+.directors > div, .person{
+    overflow: visible;
 }
 
 .directors > div{
     padding-top: 40px;
-    width: 80%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.directors > img{
+    position: absolute;
+    top: 0;
+    left: -80px;
+    width: 150px;
+    height: 150px;
 }
 
 .person{
-    flex: 1 1 33%;
-    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    background-color: var(--color-primary);
+    padding: 10px 0 30px 0;
+    position: relative;
 }
 
 .person img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     border: 2px solid var(--color-white);
 }
 
-.clients, .clients > *, .clients div > *{
+.person h6{
+    padding-top: 10px;
+    font-size: 0.9em;
+    color: var(--color-green-marks);
+}
+
+.person p{
+    font-size: 0.8em;
+}
+
+.person span{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: var(--bg-color-pink) var(--cros-image) no-repeat center center;
+    position: absolute;
+    bottom: -10px;
+}
+
+.clients{
     background-color: var(--color-primary);
 }
 
 .clients{
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -126,7 +174,6 @@ li{
 }
 
 .clients div{
-    display: flex;
     width: 80%;
     justify-content: space-between;
 }
@@ -134,45 +181,4 @@ li{
 .clients div > *{
     width: 110px;
     height: 20px;
-}
-
-.contact{
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    height: 70vh;
-}
-
-.contact div, .contact form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact div{
-    flex: 1 1 50%;
-}
-
-.contact form{
-    flex: 1 1 50%;
-}
-
-.contact div > *{
-    display: flex;
-    flex-direction: row;
-}
-
-.contact > img:first-child, .contact > img:last-child{
-    position: absolute;
-}
-
-.contact > img:first-child{
-    top: 0;
-    left: -70px;
-    width: 150px;
-    height: 150px;
-}
-
-.contact > img:last-child{
-    display: none;
 }

@@ -22,6 +22,7 @@ input[type="checkbox"], .menu_img{
 }
 
 .navbar__wrapper nav span{
+    width: 30%;
     font-size: 3em;
 }
 
@@ -87,11 +88,15 @@ input[type="checkbox"], .menu_img{
     padding-top: 10px;
 }
 
+.image_qualities_bottom{
+    display: none;
+}
+
 .section{
     position: relative;
     background-color: var(--color-primary);
-    height: 75vh;
-    padding: 100px;
+    height: 70vh;
+    padding: 70px 80px;
 }
 
 .section__image-bg{
@@ -100,8 +105,9 @@ input[type="checkbox"], .menu_img{
     top: 0;
 }
 
-.section > span{
-    font-size: 0.1em;
+.section__line{
+    width: 8%;
+    height: 4px;
     background-color: var(--bg-color-pink);
     color: var(--bg-color-pink);
     border-radius: 3px;
@@ -126,6 +132,11 @@ input[type="checkbox"], .menu_img{
     padding-top: 10px;
 }
 
+.section__qualities > img{
+    width: 90px;
+    height: 80px;
+}
+
 .img_top_container{
     position: absolute;
     left: 0;
@@ -140,6 +151,17 @@ input[type="checkbox"], .menu_img{
     display: flex;
     flex-direction: column;
     padding: 100px 50px;
+}
+
+.section2 img:first-child{
+    width: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section__persons{
+    overflow: visible;
 }
 
 .section__persons h3{
