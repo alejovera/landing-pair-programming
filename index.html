@@ -8,11 +8,22 @@
     <title>Document</title>
 </head>
 <body>
+    <script src="./assets/js/app.js"></script>
+
     <div class="banner">
+        <!-- Testing Js vanilla -->
+        <button onclick="onNavigate('/');">Home</button>
+        <button onclick="onNavigate('/about');">About</button>
+        <button onclick="onNavigate('/contact');">Contact</button>
+
+        <!-- End Testing Js Vanilla  -->
+        
         <div class="navbar__wrapper">
             <nav>
                 <span>myteam</span>
-            
+
+                
+                
                 <input type="checkbox" id="menu" />
                 <label for="menu">
                     <img class="menu_img" src="./icons/icon-hamburger.svg" alt="">
@@ -126,5 +137,7 @@
             </div>
         </div>
     </footer>
+
+    <div id="root"></div>
 </body>
 </html>
