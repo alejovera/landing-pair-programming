@@ -12,10 +12,8 @@ async function loadSuccessCases(){
                 position : object.get('Position'),
             })
         }
-        console.log('results', results);
-        console.log('clients', clients);
     } catch (error) {
-        console.error('Error while fetching MyCustomClassName', error);
+        console.error('Error while fetching Clients', error);
     }
 }
 
@@ -29,8 +27,6 @@ window.onload = async () => {
 
 function displaySuccessCases(){
     let clientsData = document.getElementsByClassName("section__persons-container");
-    console.log('clientsData.length', clientsData.length)
-    console.log('clients.length', clients.length)
     for (let i = 0; i < clientsData.length; i++) {
         const clientData = clientsData[i];
         clientData.children[1].innerText = clients[i].name;
