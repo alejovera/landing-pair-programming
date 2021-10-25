@@ -54,20 +54,20 @@ const home = `
         <h3>Delivering real results for top companies. Some of our <span>sucess stories</span></h3>
         <div class="section__persons-container">
             <p>“The team perfectly fit the specialized skill set required. They focused on the most essential features helping us launch the platform eight months faster than planned.” </p>
-            <h4>Kody Beker</h4>
-            <h6>Product Manager at Bookmark</h6>
+            <h4></h4>
+            <h6></h6>
             <img src="./icons/avatar-kady.jpg" alt="">
         </div>
         <div class="section__persons-container">
             <p>“We needed to automate our entire onboarding process. The team came in and built out the whole journey. Since going live, user retention has gone through the roof!”</p>
-            <h4>Aiysha Reese </h4>
-            <h6>Founder of Manage</h6>
+            <h4></h4>
+            <h6></h6>
             <img src="./icons/avatar-aiysha.jpg" alt="">
         </div>
         <div class="section__persons-container">
             <p>“Amazing. Our team helped us build an app that delivered a new experience for hiring a physio. The launch was an instant success with 100k downloads in the first month.”</p>
-            <h4>Arthur Clarke</h4>
-            <h6>Co-founder of MyPhysio</h6>
+            <h4></h4>
+            <h6></h6>
             <img src="./icons/avatar-arthur.jpg" alt="">
         </div>
     </div>
@@ -264,5 +264,3 @@ const onNavigate = (_pathname) => {
     window.history.pushState(null, _pathname, _pathname);
     rootDiv.innerHTML = routes[_pathname];
 };
-
-window.onload = () => onNavigate("/");
