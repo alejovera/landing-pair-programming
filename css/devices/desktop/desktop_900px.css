@@ -17,7 +17,10 @@ input[type="checkbox"], .menu_img{
 .navbar__wrapper nav, #items_navbar{
     display: flex;
 }
-
+nav a {
+    font-size: 1.2rem;
+    padding: 0 3em;
+}
 .navbar__wrapper nav span{
     font-size: 3em;
     color: var(--color-white);
@@ -76,9 +79,7 @@ input[type="checkbox"], .menu_img{
     font-family: 'Livvic';
     margin-left: 2 !important;
     padding: 0 0 0 3em;
-    /* align-self: flex-end; */
     margin: 0;
-    /* margin: 2em 0; */
 }
 .banner-info h1 span {
     color: var(--color-pink);
