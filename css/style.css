@@ -12,7 +12,7 @@
 
 @import url(./devices/desktop/desktop_900px-mini.css) (min-width: 900px);
 
-@import url(./devices/desktop/aboutpage_900-mini.css) (min-width: 900px);
+@import url(./devices/desktop/aboutpage_900px.css) (min-width: 900px);
 
 @import url(./devices/desktop/contact_900px-mini.css) (min-width: 900px);
 

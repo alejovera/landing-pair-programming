@@ -24,6 +24,7 @@
 .navbar__wrapper{
     justify-content: center;
     padding: 20px;
+    margin-top: 0 !important;
 }
 
 .navbar__wrapper span{
