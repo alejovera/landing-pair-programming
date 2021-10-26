@@ -264,20 +264,31 @@ footer div span {
     color: var(--color-white);
     font-weight: bold;
     font-family: 'Livvic';
+    text-align: center;
+    position: relative;
+    margin: 1em 0;
+
 }
 footer div nav {
     display: flex;
     justify-content: center;
 }
-.footer__links_contact {
+.footer_info div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__links{
     display: flex;
     justify-content: center !important;
-    padding: 0 2em;
+    padding: 0 !important;
+    margin: 1em ;
 }
 .footer__links a {
     color: var(--color-white);
     /* font-weight: bold; */
     font-family: 'Livvic';
+    padding: 0 1em;
 }
 .footer__data {
     display: flex;

@@ -10,5 +10,10 @@ function sendMail(params) {
     emailjs.send('contact_service_landing', 'template_6t1ma4k', tempParams)
         .then(function(res) {
             console.log(res.status);
+            Rollbar.info(res)
+        })
+        .catch(function (error) {
+            console.log(error);
+            Rollbar.error(error)
         })
 }
