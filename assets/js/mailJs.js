@@ -10,10 +10,10 @@ function sendMail(params) {
     emailjs.send('contact_service_landing', 'template_6t1ma4k', tempParams)
         .then(function(res) {
             console.log(res.status);
-            Rollbar.info('Info about the status of mailJs', res.status)
+            Rollbar.info('Info about the status of mailJs' + res.status)
         })
-        .catch(function (error) {
+        .catch(function ({error: error}) {
             console.log(error);
-            Rollbar.error('Error using mailJs',error)
+            Rollbar.error('Error using mailJs' + {error})
         })
 }
