@@ -17,7 +17,7 @@ input[type="checkbox"], .menu_img{
 .navbar__wrapper nav, #items_navbar{
     display: flex;
 }
-nav a {
+.footer__links a {
     font-size: 1.2rem;
     padding: 0 3em;
 }
