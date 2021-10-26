@@ -252,15 +252,15 @@ const contact = `
 `;
 
 const routes = {
-    "/": home,
-    "/contact": contact,
-    "/about": about
+  "/": home,
+  "/contact": contact,
+  "/about": about,
 };
 
 const rootDiv = document.getElementById("root");
 
-const onNavigate = (_pathname) => {    
-    window.history.replaceState(null, null, _pathname);
-    window.history.pushState(null, _pathname, _pathname);
-    rootDiv.innerHTML = routes[_pathname];
+const onNavigate = (_pathname) => {
+  window.history.replaceState(null, null, _pathname);
+  window.history.pushState(null, _pathname, _pathname);
+  rootDiv.innerHTML = routes[_pathname];
 };
