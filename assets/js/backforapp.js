@@ -14,6 +14,7 @@ async function loadSuccessCases(){
         }
     } catch (error) {
         console.error('Error while fetching Clients', error);
+        Rollbar.error('Error del Back4app', error)
     }
 }
 
