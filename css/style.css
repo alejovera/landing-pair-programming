@@ -12,10 +12,10 @@
 
 @import url(./devices/desktop/desktop_900px-mini.css) (min-width: 900px);
 
-@import url(./devices/desktop/aboutpage_900px.css) (min-width: 900px);
+@import url(./devices/desktop/aboutpage_900-mini.css) (min-width: 900px);
 
 @import url(./devices/desktop/contact_900px-mini.css) (min-width: 900px);
 
 @import url(./devices/tablet/tablet_900px-mini.css) (min-width: 600px) and (max-width: 900px);
 
-@import url(./devices/mobile/mobile_600px.css) (max-width: 600px);
+@import url(./devices/mobile/mobile_600px-mini.css) (max-width: 600px);
